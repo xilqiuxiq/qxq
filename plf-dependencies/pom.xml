@@ -160,20 +160,20 @@
           <groupId>com.sun.xml.bind</groupId>
         </exclusion>
         <!-- Coming by transitivity from org.gatein.portal:exo.portal.webui.portal -->
-        <exclusion>          
+        <exclusion>
           <groupId>commons-logging</groupId>
           <artifactId>commons-logging</artifactId>
         </exclusion>
-        <exclusion>          
+        <exclusion>
           <groupId>javax.servlet</groupId>
           <artifactId>javax.servlet-api</artifactId>
         </exclusion>
         <!-- Coming by transitivity from org.exoplatform.social:social-component-core -->
-        <exclusion>          
+        <exclusion>
           <groupId>xerces</groupId>
           <artifactId>xmlParserAPIs</artifactId>
         </exclusion>
-        <exclusion>          
+        <exclusion>
           <groupId>rome</groupId>
           <artifactId>modules</artifactId>
         </exclusion>
@@ -208,7 +208,7 @@
       <groupId>org.exoplatform.commons</groupId>
       <artifactId>commons-extension-webapp</artifactId>
       <type>pom</type>
-    </dependency>   
+    </dependency>
     <dependency>
       <groupId>org.exoplatform.commons</groupId>
       <artifactId>commons-webui-resources</artifactId>
@@ -441,6 +441,11 @@
       <groupId>org.exoplatform.kernel</groupId>
       <artifactId>exo.kernel.component.ext.cache.impl.infinispan.v5</artifactId>
     </dependency>
+    <!-- SWF-3302: Include kernel multitenancy JAR for UXPaaS -->
+    <dependency>
+      <groupId>org.exoplatform.kernel</groupId>
+      <artifactId>exo.kernel.container.multitenancy</artifactId>
+    </dependency>
     <!-- Platform Upgrade Plugins -->
     <dependency>
       <groupId>org.exoplatform.platform</groupId>
@@ -523,7 +528,7 @@
     <dependency>
       <groupId>org.exoplatform.platform</groupId>
       <artifactId>platform-extension-portlets-notification</artifactId>
-      <type>pom</type>      
+      <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.exoplatform.platform</groupId>
